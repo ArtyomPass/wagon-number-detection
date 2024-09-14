@@ -26,22 +26,24 @@
 
 ## Использование
 
+Вы можете использовать уже обученные веса модели, расположенные по пути runs/train/exp/weights/best.pt, для обнаружения номеров вагонов на изображениях, видео или в реальном времени с помощью веб-камеры.
+
 1. **Обнаружение на изображении:**
 
    ```bash
-   python detect.py --source path/to/your/image.jpg
+   python detect.py --weights runs/train/exp7/weights/best.pt --source path/to/your/image.jpg
    ```
 
 2. **Обнаружение на видео:**
 
    ```bash
-   python detect.py --source path/to/your/video.mp4
+   python detect.py --weights runs/train/exp7/weights/best.pt --source path/to/your/video.mp4
    ```
 
 3. **Обнаружение с веб-камеры:**
 
    ```bash
-   python detect.py --source 0
+   python detect.py --weights runs/train/exp7/weights/best.pt --source 0
    ```
 
 ## Обучение модели (при необходимости)
@@ -53,6 +55,7 @@
    ```bash
    python train.py --img 640 --batch 16 --epochs 50 --data data.yaml --weights yolov5s.pt
    ```
+Примечание: Во время обучения все результаты, включая веса модели, журналы и изображения, будут сохранены в новой директории внутри runs/train/. Каждая новая сессия обучения создаёт новую папку с названием exp, exp1, exp2 и т.д.
 
 ## Результаты
 
