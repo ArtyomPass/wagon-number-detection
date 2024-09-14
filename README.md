@@ -31,19 +31,19 @@
 1. **Обнаружение на изображении:**
 
    ```bash
-   python detect.py --weights runs/train/exp7/weights/best.pt --source path/to/your/image.jpg
+   python detect.py --weights runs/train/exp/weights/best.pt --source path/to/your/image.jpg
    ```
 
 2. **Обнаружение на видео:**
 
    ```bash
-   python detect.py --weights runs/train/exp7/weights/best.pt --source path/to/your/video.mp4
+   python detect.py --weights runs/train/exp/weights/best.pt --source path/to/your/video.mp4
    ```
 
 3. **Обнаружение с веб-камеры:**
 
    ```bash
-   python detect.py --weights runs/train/exp7/weights/best.pt --source 0
+   python detect.py --weights runs/train/exp/weights/best.pt --source 0
    ```
 
 ## Обучение модели (при необходимости)
