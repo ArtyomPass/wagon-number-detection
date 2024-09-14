@@ -1,4 +1,5 @@
-path: work/yolov5/dataset
+path: dataset
+
 train: train/images  # путь к тренировочным изображениям
 val: val/images  # путь к валидационным изображениям
 
